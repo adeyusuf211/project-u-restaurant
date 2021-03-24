@@ -1,0 +1,185 @@
+@media screen and (max-width: 700px) {
+  #progressBar {
+    display: none;
+  }
+
+  .cursor {
+    display: none;
+  }
+
+  .my-nav-list ul {
+    display: none;
+  }
+
+  .my-nav-button {
+    display: none;
+    height: 80px;
+  }
+
+  .my-header {
+    padding: 0 20px !important;
+    box-sizing: border-box;
+    place-content: center;
+    margin-top: 30px;
+  }
+
+  .my-header .header-text {
+    padding: 30px 0;
+  }
+
+  .my-header .header-text h4 {
+    font-size: 1.5rem;
+  }
+
+  .my-header .header-text h2 {
+    font-size: 3rem;
+  }
+
+  .my-header .header-text h3 {
+    font-size: 1.5rem;
+  }
+
+  .my-header .header-text .header-text-link a:nth-child(1) {
+    width: 120px;
+    height: 40px;
+    font-size: 16px;
+  }
+
+  .my-header .header-text .header-text-link a:nth-child(2) {
+    width: 120px;
+    font-size: 16px;
+    height: 40px;
+  }
+
+  .my-about {
+    padding: 0 20px;
+    box-sizing: border-box;
+  }
+
+  .my-about .about-text {
+    margin: 20px;
+  }
+
+  .my-about .about-text h3 {
+    font-size: 2rem;
+  }
+
+  .my-about .about-text p {
+    font-size: 1rem;
+  }
+
+  .my-food {
+    padding: 0 20px;
+    box-sizing: border-box;
+  }
+
+  .my-food .food-text {
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .my-food .food-text input {
+    width: 100%;
+  }
+
+  .my-food .food-text h3 {
+    font-size: 2rem;
+  }
+
+  .my-food .food-list {
+    display: flex;
+    flex-direction: column;
+    padding: 0 10px;
+    box-sizing: border-box;
+  }
+
+  .my-food .food-list .food-card {
+    padding: 10px;
+    box-sizing: border-box;
+  }
+
+  .my-food .food-list .food-card .food-card-body h3 {
+    margin-top: 20px;
+    font-size: 2rem;
+  }
+
+  .my-food .food-list .food-card .food-card-body p {
+    font-size: 1rem;
+  }
+
+  .my-quote h3 {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .my-reservation {
+    padding: 0 20px;
+    box-sizing: border-box;
+  }
+
+  .my-reservation .reservation-card {
+    padding: 20px;
+    box-sizing: border-box;
+  }
+
+  .my-reservation .reservation-text h3 {
+    font-size: 2rem;
+  }
+
+  .my-reservation .reservation-text p {
+    font-size: 1rem;
+  }
+
+  .footer {
+    padding: 0 20px;
+    box-sizing: border-box;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .footer .footer-text h3 {
+    font-size: 2rem;
+  }
+
+  .footer .footer-copy h4 {
+    font-size: 1.3rem;
+  }
+
+  .modal-login {
+    width: 80vw;
+  }
+
+  .modal-header h3 {
+    font-size: 1.5rem;
+  }
+
+  .modal-header span {
+    font-size: 1.5rem;
+  }
+
+  .modal-form .form-group input {
+    padding: 0.5rem;
+    box-sizing: border-box;
+    font-size: 16px;
+  }
+
+  .modal-form .form-group label {
+    font-size: 16px;
+  }
+
+  .modal-footer .button button {
+    padding: 0.5rem;
+    font-size: 16px;
+  }
+
+  .chat {
+    width: 50px;
+    height: 50px;
+    margin: 20px;
+  }
+
+  .chat svg {
+    width: 30px;
+    height: 30px;
+  }
+}
