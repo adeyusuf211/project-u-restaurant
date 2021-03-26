@@ -7,6 +7,14 @@
     display: none;
   }
 
+  .my-nav {
+    height: 80px;
+  }
+
+  .my-nav-logo h3 {
+    font-size: 1.5rem;
+  }
+
   .my-nav-list ul {
     display: none;
   }
