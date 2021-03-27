@@ -185,4 +185,14 @@
     width: 30px;
     height: 30px;
   }
+
+  .modal-detail {
+    width: 80vw;
+    padding: 1.5rem;
+    box-sizing: border-box;
+  }
+
+  .detail-header {
+    padding: 0;
+  }
 }
