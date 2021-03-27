@@ -25,14 +25,9 @@
   }
 
   .my-header {
-    padding: 20px !important;
+    padding: 0 20px;
     box-sizing: border-box;
-    place-content: center;
-    margin-top: 30px;
-  }
-
-  .my-header .header-text {
-    margin-top: 150px;
+    margin-top: 100px;
   }
 
   .my-header .header-text h4 {
