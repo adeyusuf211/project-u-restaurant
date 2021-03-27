@@ -110,3 +110,30 @@ window.addEventListener('click', (e) => {
     }
 });
 // end script modal
+
+// script for modal
+const modalDetail   = document.getElementById('detail-modal');
+const detail        = document.querySelectorAll('#detail');
+// const batal = document.getElementById('batal');
+// const span  = document.getElementById('tutup');
+
+for (const details of detail) {
+    details.addEventListener("click", function(e) {
+        e.preventDefault;
+        modalDetail.style.display = "grid";
+    });
+  }
+// span.addEventListener('click', function() {
+//     modal.style.display = "none";
+// });
+
+// batal.addEventListener('click', function() {
+//     modal.style.display = "none";
+// });
+
+window.addEventListener('click', (e) => {
+    if(e.target === modalDetail) {
+        modalDetail.style.display = "none";
+    }
+});
+// end script modal
