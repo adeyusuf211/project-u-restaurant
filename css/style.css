@@ -162,6 +162,10 @@
   height: 3px;
 }
 
+.my-nav-icons {
+  display: none;
+}
+
 .my-nav-button {
   width: 200px;
   height: 80px;
@@ -353,6 +357,7 @@ h3 {
   border-radius: 5px;
   font-size: 20px;
   color: rgb(80, 80, 80);
+  border: 1px solid gray;
 }
 
 .my-food .food-text h3::after {
@@ -686,6 +691,7 @@ h3 {
   outline: none;
   font-size: 20px;
   border-radius: 5px;
+  border: 1px solid rgb(163, 163, 163);
 }
 
 .modal-form .form-group label {

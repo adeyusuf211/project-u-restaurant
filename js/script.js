@@ -23,6 +23,25 @@ function clickHandler(e) {
 }
 // end script
 
+// script for smooth scrolling
+const navPhone = document.querySelectorAll(".my-nav-icons a");
+
+for (const phone of navPhone) {
+  phone.addEventListener("click", clickHandler);
+}
+
+function clickHandler(e) {
+  e.preventDefault();
+  const href = this.getAttribute("href");
+  const offsetTop = document.querySelector(href).offsetTop;
+
+  scroll({
+    top: offsetTop,
+    behavior: "smooth"
+  });
+}
+// end script
+
 // script for custom cursor
 let mouse       = document.querySelector('.cursor');
 const h4        = document.querySelectorAll('h4');
