@@ -19,6 +19,33 @@
     display: none;
   }
 
+  .my-nav-icons {
+    background: var(--primary-color);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 80px;
+  }
+
+  .my-nav-icons > * {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    width: 100vw;
+  }
+
+  .my-nav-icons svg {
+    width: 25px;
+    height: 25px;
+    color: rgb(222, 189, 253);
+    transition: all 0.5s ease-in;
+  }
+
+  .my-nav-icons img:hover {
+    fill: rgb(222, 189, 253);
+  }
+
   .my-nav-button {
     display: none;
     height: 80px;
@@ -138,6 +165,7 @@
     box-sizing: border-box;
     flex-direction: column;
     justify-content: center;
+    margin-bottom: 50px;
   }
 
   .footer .footer-text h3 {
@@ -179,6 +207,7 @@
     width: 50px;
     height: 50px;
     margin: 20px;
+    bottom: 90px;
   }
 
   .chat svg {

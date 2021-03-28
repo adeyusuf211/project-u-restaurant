@@ -136,6 +136,17 @@
   width: 500px;
 }
 
+.my-nav-list ul li {
+  display: flex;
+  flex-direction: column;
+}
+
+.my-nav-list ul li img {
+  width: 20px;
+  height: 20px;
+  display: flex;
+}
+
 .my-nav-list ul li a {
   text-decoration: none;
   position: relative;
