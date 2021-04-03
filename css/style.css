@@ -746,13 +746,9 @@ h3 {
 
 .modal-footer .button {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
   width: 100%;
-}
-
-.modal-footer .button a {
-  text-decoration: none;
 }
 
 .modal-footer .button button {
@@ -771,5 +767,6 @@ h3 {
 
 .modal-footer .button button:nth-child(1) {
   background-color: var(--secondary-color);
+  margin-right: 5px;
 }
 /* end style modal-login */
