@@ -81,6 +81,46 @@
 }
 /* End style unique scroll page */
 
+/* Style for loader */
+.load {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  z-index: 100000000;
+  background: white;
+  display: none;
+  place-content: center;
+}
+
+.load .loader {
+  width: 400px;
+  height: 50px;
+  background: rgb(238, 238, 238);
+  display: flex;
+  border-radius: 50px;
+}
+
+.load .loader .box {
+  width: 50px;
+  height: 50px;
+  background-color: rgb(69, 124, 228);
+  animation: load 1.3s both infinite;
+  animation-delay: 2s;
+  border-radius: 50px;
+}
+
+@keyframes load {
+  0% {
+    width: 0px;
+    transform: translateX(0);
+  }
+  100% {
+    width: 100%;
+    transform: translateX(100%);
+  }
+}
+/* End loader style */
+
 /* style for custom cursor */
 .cursor {
   width: 3rem;
@@ -702,6 +742,17 @@ h3 {
 .modal-footer {
   display: flex;
   justify-content: flex-end;
+}
+
+.modal-footer .button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.modal-footer .button a {
+  text-decoration: none;
 }
 
 .modal-footer .button button {

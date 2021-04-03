@@ -32,8 +32,8 @@ for (const phone of navPhone) {
 
 function clickHandler(e) {
   e.preventDefault();
-  const href = this.getAttribute("href");
-  const offsetTop = document.querySelector(href).offsetTop;
+  const href        = this.getAttribute("href");
+  const offsetTop   = document.querySelector(href).offsetTop;
 
   scroll({
     top: offsetTop,
@@ -106,10 +106,10 @@ window.onscroll = function() {
 
 
 // script for modal
-const modal = document.getElementById('modal');
-const login = document.getElementById('login');
-const batal = document.getElementById('batal');
-const span  = document.getElementById('tutup');
+const modal     = document.getElementById('modal');
+const login     = document.getElementById('login');
+const batal     = document.getElementById('batal');
+const span      = document.getElementById('tutup');
 
 login.addEventListener('click', function() {
     modal.style.display = "grid";
@@ -129,3 +129,11 @@ window.addEventListener('click', (e) => {
     }
 });
 // end script modal
+
+// script for loader
+const load = document.querySelector('.load');
+
+window.addEventListener('beforeunload', function() {
+    load.style.display = "grid";
+});
+// end loader script

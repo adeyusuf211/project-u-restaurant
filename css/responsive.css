@@ -3,6 +3,10 @@
     display: none;
   }
 
+  .load .loader {
+    width: 200px;
+  }
+
   .cursor {
     display: none;
   }
@@ -36,15 +40,9 @@
     width: 100vw;
   }
 
-  .my-nav-icons svg {
+  .my-nav-icons img {
     width: 25px;
     height: 25px;
-    color: rgb(222, 189, 253);
-    transition: all 0.5s ease-in;
-  }
-
-  .my-nav-icons img:hover {
-    fill: rgb(222, 189, 253);
   }
 
   .my-nav-button {
