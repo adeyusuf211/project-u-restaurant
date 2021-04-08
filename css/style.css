@@ -429,12 +429,18 @@ h3 {
 .my-food .food-list .food-card .food-card-image {
   display: flex;
   position: relative;
+  overflow: hidden;
 }
 
 .my-food .food-list .food-card .food-card-image img {
   width: 100%;
   object-fit: cover;
   object-position: center;
+  transition: 0.5s ease-in;
+}
+
+.my-food .food-list .food-card .food-card-image img:hover {
+  transform: scale(1.3) rotate(5deg);
 }
 
 .my-food .food-list .food-card .food-card-image button {
