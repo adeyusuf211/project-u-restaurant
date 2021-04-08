@@ -397,7 +397,6 @@ h3 {
   border-radius: 5px;
   font-size: 20px;
   color: rgb(80, 80, 80);
-  border: 1px solid gray;
 }
 
 .my-food .food-text h3::after {

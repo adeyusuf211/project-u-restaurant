@@ -113,12 +113,19 @@
   }
 
   .my-food .food-text {
+    display: flex;
     justify-content: center;
     flex-direction: column;
+    padding: 0;
   }
 
-  .my-food .food-text input {
-    width: 100%;
+  .my-food .food-text .food-search {
+    padding: 10px 0;
+    box-sizing: border-box;
+  }
+
+  .my-food .food-text .food-search input {
+    width: 90%;
   }
 
   .my-food .food-text h3 {
