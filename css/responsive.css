@@ -156,9 +156,31 @@
     box-sizing: border-box;
   }
 
-  .my-reservation .reservation-card {
-    padding: 20px;
+  .my-reservation .reservation-list {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .my-reservation .reservation-list .reservation-info .card-info:hover {
+    box-shadow: none;
+  }
+
+  .my-reservation .reservation-list .reservation-info .card-info .card-number {
+    font-size: 2rem;
+  }
+
+  .my-reservation .reservation-list .reservation-info .card-info .card-text {
+    font-size: 1.1rem;
+  }
+
+  .my-reservation .reservation-list .reservation-card {
+    padding: 1rem;
     box-sizing: border-box;
+  }
+
+  .my-reservation .reservation-list .reservation-card:hover {
+    box-shadow: none;
   }
 
   .my-reservation .reservation-text h3 {
@@ -246,5 +268,19 @@
 
   .contact .contact-content .list-card .contact-card p {
     font-size: 1rem;
+  }
+
+  .footer {
+    padding: 0 20px;
+    height: 50vh;
+  }
+
+  .footer h3 {
+    font-size: 2rem;
+  }
+
+  .footer h6 {
+    font-size: 1.15rem;
+    margin-top: 0;
   }
 }

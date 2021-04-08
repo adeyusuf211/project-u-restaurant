@@ -556,8 +556,6 @@ h3 {
   min-height: 100vh;
   padding: 0 150px;
   box-sizing: border-box;
-  display: grid;
-  place-content: center;
 }
 
 .my-reservation .reservation-text {
@@ -576,18 +574,55 @@ h3 {
   letter-spacing: 2px;
 }
 
-.my-reservation .reservation-card {
-  width: 100%;
-  padding: 30px;
+.my-reservation .reservation-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 10px;
+  padding: 20px;
+}
+
+.my-reservation .reservation-list .reservation-info {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.my-reservation .reservation-list .reservation-info .card-info {
+  display: flex;
+  padding: 1em;
+  margin: 10px 0;
+  transition: all 0.3s ease-in;
+  border-radius: 5px;
+}
+
+.my-reservation .reservation-list .reservation-info .card-info:hover {
+  box-shadow: 0 0 10px rgb(160, 160, 160, 0.4);
+}
+
+.my-reservation .reservation-list .reservation-info .card-info .card-number {
+  width: 100px;
+  font-size: 3rem;
+  font-weight: bold;
+  display: grid;
+  place-content: center;
+}
+
+.my-reservation .reservation-list .reservation-info .card-info .card-text {
+  font-size: 1.3rem;
+  display: grid;
+  place-content: center;
+}
+
+.my-reservation .reservation-list .reservation-card {
+  padding: 1em 2em;
   transition: all 0.3s ease-in;
 }
 
-.my-reservation .reservation-card:hover {
+.my-reservation .reservation-list .reservation-card:hover {
   box-shadow: 0 0 10px rgb(116, 115, 115, 0.3);
 }
 
 .my-reservation .reservation-group {
-  width: 100%;
   display: flex;
   flex-direction: column;
   margin: 30px 0;
@@ -677,6 +712,7 @@ h3 {
 
 .contact .contact-content .contact-text {
   margin-top: 30px;
+  position: relative;
 }
 
 .contact .contact-content .contact-text h6 {
@@ -684,12 +720,23 @@ h3 {
   font-weight: inherit;
 }
 
+.contact .contact-content .contact-text h3::after {
+  content: "";
+  width: 10%;
+  height: 5px;
+  border-radius: 50px;
+  display: flex;
+  background-color: var(--primary-color);
+  position: absolute;
+  bottom: 0;
+}
+
 .contact .contact-content .list-card {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
   gap: 30px;
   padding: 10px;
-  margin-bottom: 50px;
+  margin: 50px 0;
 }
 
 .contact .contact-content .list-card .contact-card {
