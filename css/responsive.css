@@ -169,22 +169,6 @@
     font-size: 1rem;
   }
 
-  .footer {
-    padding: 0 20px;
-    box-sizing: border-box;
-    flex-direction: column;
-    justify-content: center;
-    margin-bottom: 50px;
-  }
-
-  .footer .footer-text h3 {
-    font-size: 2rem;
-  }
-
-  .footer .footer-copy h4 {
-    font-size: 1.3rem;
-  }
-
   .modal-login {
     width: 80vw;
     padding: 1.2rem;
@@ -223,5 +207,44 @@
   .chat svg {
     width: 30px;
     height: 30px;
+  }
+
+  .contact .contact-sosmed {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .contact .contact-sosmed h3 {
+    font-size: 1.5rem;
+  }
+
+  .contact .contact-sosmed ul li {
+    padding: 1em;
+  }
+
+  .contact .contact-sosmed ul li a {
+    font-size: 1.1rem;
+  }
+
+  .contact .contact-content {
+    padding: 0 20px;
+  }
+
+  .contact .contact-content h3 {
+    font-size: 2rem;
+  }
+
+  .contact .contact-content .list-card {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+  }
+
+  .contact .contact-content .list-card .contact-card h3 {
+    font-size: 2rem;
+  }
+
+  .contact .contact-content .list-card .contact-card p {
+    font-size: 1rem;
   }
 }

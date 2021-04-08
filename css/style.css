@@ -173,12 +173,12 @@
   display: flex;
   justify-content: space-evenly;
   list-style: none;
-  width: 500px;
 }
 
 .my-nav-list ul li {
   display: flex;
   flex-direction: column;
+  padding: 0 1em;
 }
 
 .my-nav-list ul li img {
@@ -635,28 +635,113 @@ h3 {
 }
 /* end contact style */
 
-/* style for class footer */
-.footer {
+/* style for contact */
+.contact {
+  width: 100vw;
+  min-height: 100vh;
+}
+
+.contact .contact-sosmed {
   width: 100vw;
   height: 20vh;
   background-color: var(--primary-color);
-  padding: 0 150px;
-  box-sizing: border-box;
   display: flex;
+  justify-content: space-around;
   align-items: center;
-  justify-content: space-between;
-}
-
-.footer .footer-text h3 {
-  font-size: 4rem;
   color: white;
 }
 
-.footer .footer-copy h4 {
-  font-size: 2rem;
+.contact .contact-sosmed ul {
+  display: flex;
+}
+
+.contact .contact-sosmed ul li {
+  padding: 0 2em;
+}
+
+.contact .contact-sosmed ul li a {
+  text-decoration: none;
+  color: rgb(212, 212, 255);
+  font-size: 1.2rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.contact .contact-sosmed a:hover {
+  color: white;
+}
+
+.contact .contact-content {
+  padding: 0 150px;
+  box-sizing: border-box;
+}
+
+.contact .contact-content .contact-text {
+  margin-top: 30px;
+}
+
+.contact .contact-content .contact-text h6 {
+  font-size: 1.2rem;
   font-weight: inherit;
-  letter-spacing: 1px;
-  color: rgb(225, 201, 252);
+}
+
+.contact .contact-content .list-card {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  gap: 30px;
+  padding: 10px;
+  margin-bottom: 50px;
+}
+
+.contact .contact-content .list-card .contact-card {
+  padding: 2em;
+  box-sizing: border-box;
+  transition: all 0.5s ease-in;
+}
+
+.contact .contact-content .list-card .contact-card:hover {
+  box-shadow: 0 0 10px rgba(179, 179, 179, 0.7);
+}
+
+.contact .contact-content .list-card .contact-card p {
+  font-size: 1.3rem;
+}
+
+.contact .contact-content .maps {
+  width: 100%;
+  height: 100%;
+}
+
+.contact .contact-content .maps iframe {
+  width: 100%;
+}
+/* end contact style */
+
+/* style for footer */
+.footer {
+  width: 100vw;
+  height: 30vh;
+  padding: 0 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.footer h6 {
+  font-size: 1.7rem;
+  font-weight: inherit;
+  color: rgb(163, 163, 163);
+  margin-top: 20px;
+}
+
+.footer h6 > a {
+  text-decoration: none;
+  color: var(--primary-color);
+  transition: 0.3s ease-in-out;
+}
+
+.footer h6 > a:hover {
+  color: rgb(176, 181, 222);
 }
 /* end footer style */
 
