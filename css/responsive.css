@@ -40,9 +40,15 @@
     width: 100vw;
   }
 
-  .my-nav-icons img {
+  .my-nav-icons svg {
     width: 25px;
     height: 25px;
+    color: white;
+    transition: all 0.3s ease-in;
+  }
+
+  .my-nav-icons svg:hover {
+    color: rgb(255, 170, 234);
   }
 
   .my-nav-button {
